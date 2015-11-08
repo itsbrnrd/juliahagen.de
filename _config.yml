@@ -1,0 +1,12 @@
+title: "Julia Hagen"
+descripiton: ""
+author: "Julia Hagen"
+permalink: pretty
+
+gems:
+- jekyll-sass-converter
+- jekyll-feed
+
+sass:
+    sass-dir: css
+    style: :compressed

@@ -1,0 +1,41 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+$primary: #88D3AB;
+
+
+$darker: #26272C;
+$dark: #3E4149;
+$light: #95969B;
+$lighter: #F6F7FA;
+
+@import 'typography';
+@import 'grid';
+@import 'lists';
+@import 'tables';
+@import 'images';
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+::-moz-selection {
+    background: $primary;
+    color: #FFF;
+}
+::selection {
+    background: $primary;
+    color: #FFF;
+}
+
+.content {
+    width: 80%;
+    max-width: 768px;
+    margin: 0 auto;
+}

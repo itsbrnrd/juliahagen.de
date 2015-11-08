@@ -1,0 +1,89 @@
+/**
+ * Generic lists
+ */
+ol,
+ul {
+    list-style-type: none;
+}
+li {
+    line-height: 1.75em;
+}
+
+ol:first-child {
+    counter-reset: ordered-list-counter;
+}
+ol li:before {
+    content: counter(ordered-list-counter, decimal) ' ';
+    font-weight: 700;
+    color: $primary;
+    float: left;
+    width: 1em;
+}
+ol li {
+    counter-increment: ordered-list-counter;
+}
+
+ul li:before {
+    content: '• ';
+    font-weight: 700;
+    color: $primary;
+    float: left;
+    width: 1em;
+}
+
+/**
+ *
+ */
+
+.summary-item:before {
+    content: '';
+}
+
+.summary-link {
+    transition: color .3s ease;
+    border: 0;
+}
+
+.summary-link:hover {
+    border: 0;
+    color: $primary;
+}
+
+.summary-metadata {
+    font: .75em/1 'Open Sans', sans-serif;
+}
+
+.summary-tags {
+    font: .55em/1 'Open Sans', sans-serif;
+    background-color: $lighter;
+    color: $darker;
+    padding: .25em .5em;
+    margin-right: .5em;
+}
+
+.summary-tags:last-child {
+    margin-right: 0;
+}
+
+.excerpt > * {
+    text-align: left !important;
+}
+
+.introduction {
+    text-align: center;
+    font: 1em/1.5 'Open Sans', sans-serif;
+}
+
+.short {
+    font: 1em/.5 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.more {
+    font: .75em/1.5 'Open Sans', sans-serif;
+}
+
+.about-portait {
+    height: 164px;
+    width: 164px;
+}

@@ -1,0 +1,30 @@
+---
+layout: index
+---
+
+<section class="introduction space-top8 space-bottom8">
+    <img class="about-portait space-bottom2" src="/img/julia.png" />
+    <p class="short">Hej, I'm <span class="primary">Julia</span></p>
+    <p class="short space-bottom4">I am a student at London School of Economics</p>
+    <p class="more quiet">Previously, I studied at <a href="http://www.sciencespo.fr/master-public-affairs">Sciences Po</a> and <a href="https://www.zeppelin-university.com/">Zeppelin University Friedrichshafen</a> where I focused on European politics, institutionalism and public administration</p>
+</section>
+
+<nav class="summary space-top8 space-bottom8">
+    <ul>
+        {% for post in site.posts %}
+        <li class="summary-item">
+            <div class="center">
+                <h1 class="space-top4"><a href="{{post.url}}" title="{{post.title}}" class="summary-link"> {{post.title}}</a></h1>
+            </div>
+            <div class="summary-metadata quiet center">
+                <date class="space-right1">{{post.date | date: "%B %e, %Y"}}</date>  <span class="space-right1">{{ post.content | number_of_words }} words</span> <span>~{{ post.content | plus: 250 | divided_by: 180 }}min. to read</span>
+            </div>
+            <div class="center">
+                {% for tag in post.tags %}
+                <span class="summary-tags">#{{tag | upcase}}</span>
+                {% endfor %}
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>

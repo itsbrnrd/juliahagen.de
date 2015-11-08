@@ -1,0 +1,114 @@
+body,
+input,
+textarea {
+    font: 1.25em/1.75 'PT Serif', serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    color: $dark;
+}
+
+/**
+ * Headers
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+h1 {
+    font-size: 2em;
+    line-height: 1.3;
+    margin: 2em 0 .5em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    line-height: 1.25;
+    margin: 1.5em 0 .5em 0;
+}
+
+h3 {
+    font-size: 1.25em;
+    line-height: 1.125;
+    margin: 1.25em 0 .5em 0;
+}
+
+h4 {
+    font-size: 1
+    125em; line-height: 1;
+    margin: 1.125em 0 .5em 0;
+}
+
+h5,
+h6 {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 1em 0 0 0;
+}
+
+p { margin-bottom: 1em; }
+p:last-child { margin-bottom: 0; }
+
+.bold { font-weight: 700; }
+.italic { font-style: italic; }
+
+.primary { color: $primary; }
+.quiet { color: $light; }
+
+.center { text-align: center; }
+
+
+/**
+ * Links
+ */
+a {
+    color: $dark;
+    border-bottom: 1px dashed $primary;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px solid $primary;
+    text-decoration: none;
+}
+
+/**
+ * Blockquote
+ */
+blockquote {
+    font: 'PT Serif', serif;
+    padding: 0;
+    margin: 3em 0;
+}
+
+blockquote p {
+    font-style: italic;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+blockquote p:before {
+    content: '“ ';
+    color: $primary;
+}
+
+blockquote p:after {
+    content: ' ”';
+    color: $primary;
+}
+
+/**
+ * Misc.
+ */
+hr {
+    width: 60%;
+    border: 1px $light dashed;
+}
+
