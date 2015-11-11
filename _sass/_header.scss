@@ -11,6 +11,10 @@
 }
 
 .tweet > a { border: 0; }
+.tweet {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
 
 .social-icons { padding: 0; }
 .social-icon { display: inline-block; }
