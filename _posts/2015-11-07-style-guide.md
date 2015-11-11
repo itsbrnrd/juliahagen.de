@@ -1,6 +1,6 @@
 ---
 title: Style guide
-layout: posts
+layout: post
 author: Mathieu Bernard
 tags:
     - style guide
@@ -9,6 +9,8 @@ tags:
 
 **Lorem** _ipsum_ dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua.
+
+<!--more-->
 
 # Header one
 

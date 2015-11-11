@@ -1,0 +1,28 @@
+.site-header {
+    padding: 2em;
+    color: #FFF;
+}
+
+.logo { border: 0; }
+.logo:hover { border: 0; }
+
+.header-gradient {
+  background : linear-gradient(90deg, #2DA7AC 0%, #35CBA5 95.09%);
+}
+
+.tweet > a { border: 0; }
+
+.social-icons { padding: 0; }
+.social-icon { display: inline-block; }
+.social-icon > a {
+    border: 0;
+    color: #FFF;
+}
+.social-icon:before { content: ''; }
+
+.portrait {
+    width: 120px;
+    height: 120px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+}

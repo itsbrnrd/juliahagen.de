@@ -1,0 +1,26 @@
+.post {
+    margin: 6em 0;
+    padding: 2em;
+    background-color: #FFF;
+}
+
+.post-tags {
+    font-size: .75em;
+    padding: 0;
+}
+
+.post-tag {
+    float: left;
+    background-color: $lighter;
+    padding: .25em .5em;
+    margin-right: 1em;
+}
+
+.post-tag:before {
+    content: '';
+    float: none;
+}
+
+.post-tag:last-child {
+    margin-right: 0;
+}

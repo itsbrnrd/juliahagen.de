@@ -8,17 +8,21 @@
         <meta name="description" content="{{site.description}}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/css/main.css">
     </head>
     <body>
-        <article class="content">
-            <header class="space-top8 space-bottom2">
-                <time class="quiet" datetime="{{page.date}}">{{page.date | date: "%B %e, %Y"}}</time>
-                <h1 class="space-top0">{{page.title}}</h1>
-            </header>
-            {{content}}
-        </article>
+        {% include _header.html %}
+        <section>
+            <article class="content">
+                <header class="space-top8 space-bottom2">
+                    <time class="quiet" datetime="{{page.date}}">{{page.date | date: "%B %e, %Y"}}</time>
+                    <h1 class="space-top0">{{page.title}}</h1>
+                </header>
+                {{content}}
+            </article>
+        </section>
     </body>
+    {% include _scripts.html %}
 </html>
