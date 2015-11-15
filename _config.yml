@@ -3,7 +3,7 @@ descripiton: ""
 author: "Julia Hagen"
 permalink: pretty
 excerpt_separator: <!--more-->
-
+url: juliahagen.de
 
 gems:
 - jekyll-sass-converter
