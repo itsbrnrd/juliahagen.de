@@ -6,13 +6,13 @@ table {
 
 th {
     font-weight: normal;
-    border-bottom: 1px dashed $dark;
-    padding: .5em 1em;
+    border-bottom: 1px solid $dark;
+    padding: 10px 20px;
 }
 
 td {
     color: $dark;
-    padding: .5em 1em;
+    padding: 10px 20px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

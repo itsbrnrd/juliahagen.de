@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>{{site.title}} • {{page.title}}</title>
+        <title>{{page.title}}</title>
         <meta name="author" content="{{site.author}}">
         <meta name="description" content="{{site.description}}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,20 +14,31 @@
     </head>
     <body>
         {% include _header.html %}
-        <section class="content">
+        <nav class="post-navigation clearfix">
+            {% if page.previous %}
+            <a class="left" href="{{page.previous.url}}"><i class="fa fa-chevron-left text-alt space-right1"></i> Previous post</a>
+            {% endif %}
+            {% if page.next %}
+            <a class="right" href="{{page.next.url}}">Next post <i class="fa fa-chevron-right text-alt space-left1"></i></a>
+            {% endif %}
+        </nav>
+        <section>
             <article class="post">
-                <header>
-                    <date class="quiet">{{page.date | date: "%B %e, %Y"}}</date>
-                    <h1 class="space-top0">{{page.title}}</h1>
-                    <ul class="post-tags clearfix">
-                        {% for tag in page.tags %}
-                        <li class="post-tag">#{{tag | upcase}}</li>
-                        {% endfor %}
-                    </ul>
+                <header class="post-header">
+                    <h1>{{page.title}}</h1>
+                    <div class="post-meta">
+                        <p>Posted on <date class="text-bold text-dark">{{page.date | date: "%B %e, %Y"}}</date></p>
+                        <ul class="post-tags clearfix">
+                            {% for tag in page.tags %}
+                            <li class="post-tag">#{{tag | upcase}}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </header>
+                <div class="content">
                 {{content}}
+                </div>
             </article>
         </section>
     </body>
-    {% include _scripts.html %}
 </html>

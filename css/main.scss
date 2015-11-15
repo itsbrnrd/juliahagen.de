@@ -3,9 +3,17 @@
 # only Main files contain this front matter, not partials.
 ---
 
-$primary: #35CBA5;
+/*
+35CBA5 (to 2DA7AC)
+FF7043
 
-$darker: #26272C;
+3E4149
+95969B
+F6F7FA
+*/
+$primary: #35CBA5;
+$alt: #FF7043;
+
 $dark: #3E4149;
 $light: #95969B;
 $lighter: #F6F7FA;
@@ -45,16 +53,16 @@ body {
 .right { float: right; }
 
 ::-moz-selection {
-    background: $primary;
-    color: #FFF;
+    background: yellow;
+    color: $dark;
 }
 ::selection {
-    background: $primary;
-    color: #FFF;
+    background: yellow;
+    color: $dark;
 }
 
 .content {
     width: 90%;
-    max-width: 768px;
+    max-width: 620px;
     margin: 0 auto;
 }

@@ -1,32 +1,21 @@
 /**
  * Generic lists
  */
-ol,
-ul {
-    list-style-type: none;
-}
-li {
-    line-height: 1.75em;
-}
 
-ol:first-child {
-    counter-reset: ordered-list-counter;
-}
-ol li:before {
-    content: counter(ordered-list-counter, decimal) ' ';
-    font-weight: 700;
-    color: $primary;
-    float: left;
-    width: 1em;
-}
+ ul,
+ ol {
+    margin: 0px 0px 20px;
+    padding: 0px;
+ }
+
+  ul:last-child,
+  ol:last-child {
+    margin: 0;
+ }
+
+ul li,
 ol li {
-    counter-increment: ordered-list-counter;
-}
-
-ul li:before {
-    content: '• ';
-    font-weight: 700;
-    color: $primary;
-    float: left;
-    width: 1em;
+    margin: 0px 0px 10px 20px;
+    font-size: 16px;
+    line-height: 28px;
 }

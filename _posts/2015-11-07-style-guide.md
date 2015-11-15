@@ -30,34 +30,32 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-# URL
+## URL
 This is a [simple link](http://example.com)
 
-# Lists
-- List item
-- List item
-- List item
-- List item
+## Lists
 
-1. Item #1
-2. Item #2
-3. Item #3
-4. Item #4
+- 2-1/2 cups butter, softened
+- 2 cups sugar
+- 2 large eggs
+- 1/4 cup milk
+- 2 teaspoons vanilla extract
+- 7-1/2 to 8 cups all-purpose flour
+- 4 teaspoons baking powder
+- 1 teaspoon salt
 
-* Bullet list
-    * Nested bullet
-        * Sub-nested bullet etc
-* Bullet list item 2
+1. In a large bowl, cream butter and sugar until light and fluffy. Beat in eggs, milk and vanilla. In another bowl, whisk 7-1/2 cups flour, baking powder and salt; gradually beat into creamed mixture, adding additional flour if necessary. Divide dough into four 2-cup portions. Refrigerate, covered, until needed.
+2. Basic Cookie Dough may be used to prepare the following recipes: Crumb-Topped Date Bars, Cherry Surprise Cookies, Chocolate Mallow Cookies or Jelly Sandwich Cookies. Yield: 8 cups. 
 
-# Block quote
-> The willingness to learn new skills is very high. 
+## Block quote
+> "I remember the day that because that was made possible, in our minds, everything else was made possible as well." - Neil DeGrasse Tyson
 
 ---
 
-# Images
+## Images
 ![picture alt](https://images.unsplash.com/photo-1440470177828-6381dc5074ba "Title is optional")
 
-# Table
+## Table
 
 Company   |  Q1  |  Q2   |  Q3   |  Q4  |
 --------- | ---- | ----- | ----- | ---- |
